@@ -1,0 +1,7 @@
+#39F500
+#F55600
+#00F55E
+#F50C00
+#35A15E
+#48753B
+droplet: <i class="fa-solid fa-droplet"></i>
