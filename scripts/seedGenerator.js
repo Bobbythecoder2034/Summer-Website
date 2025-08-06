@@ -20,15 +20,15 @@ $(function(){
     const yArray = []
     //This program adds seeds to the background and ensures there are no duplicates
     for(let j = 0; j < limit; j++){
-        let y = Math.floor(Math.random() * ($("#content").height()) + 54)
-        let x = Math.floor((Math.random() * $("#content").width()) + 2)
+        let y = Math.floor(Math.random() * ($("#content-box").height()) + 54)
+        let x = Math.floor((Math.random() * $("#content-box").width()) + 2)
         while(xArray.indexOf(x) > -1 || x > 375){
-            x = Math.floor((Math.random() * $("#content").width()) + 2)
+            x = Math.floor((Math.random() * $("#content-box").width()) + 2)
         }
         xArray.push(x, x-1, x+1, x-2, x+2)
         
-        while(yArray.indexOf(y) > -1 || y > 220){
-            y = Math.floor(Math.random() * ($("#content").height()) +54)
+        while(yArray.indexOf(y) > -1 || y > 200){
+            y = Math.floor(Math.random() * ($("#content-box").height()) +54)
         }
         xArray.push(y, y-1, y+1, y-2, y+2)
         
