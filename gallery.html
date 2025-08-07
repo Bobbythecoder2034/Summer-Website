@@ -29,8 +29,19 @@
         <section class="flex flex-col md:flex-row items-center p-10 md:p-20 w-full bg-[#F50C00] h-auto" id="content-box">
 
         
-            <section id="hero_section" class="m-4 md:m-12 bg-[#F55600] w-full yellow flex flex-col pt-6 z-2">
-                    <!-- Image slider with arrows and some descriptions for the images.-->
+            <section id="hero_section" class="m-4 md:m-12 bg-[#F55600] w-full yellow flex flex-col pt-6 p-2 z-2">
+                    
+                    <div class="mb-12 flex flex-col md:flex-row justify-center gap-2 pr-auto pl-auto md:pr-15 md:pl-15 items-center h-100 p-20">
+                        <!-- Image slider with arrows and some descriptions for the images.-->
+                         <img src="" alt="" class="h-70 w-80 opacity-50" id="1">
+                         <img src="" alt="" class="h-90 w-100" id="2">
+                         <img src="" alt="" class="h-70 w-80 opacity-50" id="3">
+                         
+                    </div>
+                    <div id="arrow-box" class="flex flex-row justify-center m-0">
+                        <img src="./images/arrow.png" alt="arrow" id="left-arrow" class="-scale-x-100 h-10 mr-12 hover:animate-pulse">
+                        <img src="./images/arrow.png" alt="arrow" id="right-arrow" class="h-10 ml-12 hover:animate-pulse">
+                    </div>
             </section>
             
             
@@ -39,7 +50,8 @@
             <p class="text-white">&copy Kaden Smiley</p>
         </footer>
     </main>
-    <script src="./scripts/galleryScript.js"></script>
+    <script src="./scripts/galleryImages.js"></script>
+    <script src="./scripts/carouselScript.js"></script>
     <script src="./scripts/seedGenerator.js"></script>
 </body>
 </html>
