@@ -3,9 +3,9 @@ $(function(){
     let previous = 0;
     let focus = 1;
     let next = 2;
-    $("#1").attr("src", imageSRC[previous])
-    $("#2").attr("src", imageSRC[focus])
-    $("#3").attr("src", imageSRC[next])
+    $("#1").attr("src", imageSRC[previous]).attr("alt", imageAlt[previous])
+    $("#2").attr("src", imageSRC[focus]).attr("alt", imageAlt[focus])
+    $("#3").attr("src", imageSRC[next]).attr("alt", imageAlt[next])
     $("#description").text(descriptions[focus])
 
     $("#right-arrow").on("click", function(){
@@ -21,9 +21,9 @@ $(function(){
         if(next == imageSRC.length){
             next = 0
         }
-        $("#1").attr("src", imageSRC[previous])
-        $("#2").attr("src", imageSRC[focus])
-        $("#3").attr("src", imageSRC[next])
+        $("#1").attr("src", imageSRC[previous]).attr("alt", imageAlt[previous])
+        $("#2").attr("src", imageSRC[focus]).attr("alt", imageAlt[focus])
+        $("#3").attr("src", imageSRC[next]).attr("alt", imageAlt[next])
         $("#description").text(descriptions[focus])
     })
     $("#left-arrow").on("click", function(){
@@ -39,9 +39,9 @@ $(function(){
         if(next < 0){
             next = imageSRC.length - 1
         }
-        $("#1").attr("src", imageSRC[previous])
-        $("#2").attr("src", imageSRC[focus])
-        $("#3").attr("src", imageSRC[next])
+        $("#1").attr("src", imageSRC[previous]).attr("alt", imageAlt[previous])
+        $("#2").attr("src", imageSRC[focus]).attr("alt", imageAlt[focus])
+        $("#3").attr("src", imageSRC[next]).attr("alt", imageAlt[next])
         $("#description").text(descriptions[focus])
     })
 })
